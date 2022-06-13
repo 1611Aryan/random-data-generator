@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(compression())
 app.use(cors({
-    origin: "http://localhost:3000"
+    origin: process.env.NODE_ENV === "production" ? "https://random-data-generator.netlify.app" : "http://localhost:3000"
 }))
 
 app.use("/", publicRouter)
