@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm nodemon   --exec   'ts-node-esm' src/server.ts",
-    "build": "pnpm tsc",
+    "dev": "yarn nodemon   --exec   'ts-node-esm' src/server.ts",
+    "build": "yarn tsc",
     "start": " node  dist/server.js"
   },
   "keywords": [],
